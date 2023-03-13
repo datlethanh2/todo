@@ -1,0 +1,10 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "email":"dat.lethanh2@ncc.asia",
+      "password": "123qwe"
+    }
+  ]
+}

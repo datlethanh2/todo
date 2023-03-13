@@ -1,0 +1,48 @@
+@link=http://localhost:3001
+@token=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjc4MTcyMTQzLCJleHAiOjE2NzgxNzU3NDN9.6_yvAFmx79sCKOkknbVInYN3WMs_UtuBw2I292AVAgs
+
+# @name postLogin
+POST {{link}}/user/postLogin
+Content-Type:application/json
+
+{
+    "username":"admin",
+    "password":"123qwe"
+}
+
+###
+
+# @name getAll
+GET  {{link}}/todos/getAll
+Authorization:{{token}}
+
+###
+POST {{link}}/todos/postAll
+Content-Type:application/json
+Authorization:{{token}}
+
+[
+    {
+        "id":1,
+        "title":"hello up2",
+        "tick": false   
+    },
+    {
+        "id":2,
+        "title":"hello nh1",
+        "tick": false   
+    },
+    {
+        "id":3,
+        "title":"test1",
+        "tick": false   
+    }
+]
+
+###
+
+###
+
+# @name deleteAll
+DELETE  {{link}}/todos/deleteAll
+Authorization:{{token}}
