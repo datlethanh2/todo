@@ -10,7 +10,7 @@ import {theme} from "./component/createTheme"
 function App() {
   return (
     <div className="App">
-      <HashRouter>
+      <HashRouter basename="/">
         < GoogleOAuthProvider clientId="58205235959-8j4poukmjlfc6qahp0ameav09k5pah5d.apps.googleusercontent.com">
           <StoreProvider>
             <ThemeProvider theme={theme}>
