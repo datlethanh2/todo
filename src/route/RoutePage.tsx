@@ -12,8 +12,8 @@ export default function RoutePage(){
             }}
         >
             <Routes>
-                <Route path="/" element={localStorage.getItem('token')?<Navigate to="/Home/Main" />:<TodoLogin />} /> 
-                <Route path="/Home/Main" element={localStorage.getItem('token')?<TodoList/>:<Navigate to="/" />} />       
+                <Route path="http://datlethanh2.github.io/todo/" element={localStorage.getItem('token')?<Navigate to="http://datlethanh2.github.io/todo/Home/Main" />:<TodoLogin />} /> 
+                <Route path="http://datlethanh2.github.io/todo/Home/Main" element={localStorage.getItem('token')?<TodoList/>:<Navigate to="http://datlethanh2.github.io/todo/" />} />       
             </Routes>
         </div>
     )
