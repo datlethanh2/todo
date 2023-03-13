@@ -1,7 +1,7 @@
 {
   "name": "todos",
   "version": "0.1.0",
-  "homepage": "http://datlethanh2.github.io/todo/",
+  "homepage": "http://datlethanh2.github.io/todo/#",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.6",
